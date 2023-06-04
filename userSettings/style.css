@@ -2,13 +2,50 @@
     box-sizing: border-box;
 }
 
+.container {
+    margin: 0, 0;
+}
+
 .navbar {
     background-color: #DBDCF9;
-    margin: none;
 }
 
 .loginbutton {
     border-radius: 8px;
     background-color: #260B854D;
     align-self: end;
+    box-shadow: 1px 1px #5F5F5F;
+}
+
+.loginbutton:hover {
+    transform: translateY(-5px);
+    box-shadow: 2.5px 5px #00000080;
+}
+
+footer {
+    background-color: rgba(219, 220, 249, .5);
+}
+
+h1 {
+    font-style: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+    color: #5F5F5F;
+}
+
+.importanttitle {
+    color: #D2042D;
+}
+
+.importanttext {
+    color: #800020;
 }
