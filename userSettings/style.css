@@ -14,12 +14,12 @@
     border-radius: 8px;
     background-color: #260B854D;
     align-self: end;
-    box-shadow: 1px 1px #5F5F5F;
+    box-shadow: 2.5px 5px #00000080;
 }
 
-.loginbutton:hover {
-    transform: translateY(-5px);
-    box-shadow: 2.5px 5px #00000080;
+.loginbutton:active {
+    transform: translateY(+5px);
+    box-shadow: 1px 1px #5F5F5F;
 }
 
 footer {
