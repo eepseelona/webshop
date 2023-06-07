@@ -49,3 +49,7 @@ p {
 .importanttext {
     color: #800020;
 }
+
+.navimg {
+    max-width: 25px;
+}
