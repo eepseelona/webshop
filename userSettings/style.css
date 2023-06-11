@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    margin: 0, 0;
+}
+
+/* # NAVBAR */
+
+.navbar {
+    background-color: #DBDCF9;
+}
+
+.loginbutton {
+    border-radius: 8px;
+    background-color: #260B854D;
+    align-self: end;
+    box-shadow: 2.5px 5px #00000080;
+}
+
+.loginbutton:active {
+    transform: translateY(+5px);
+    box-shadow: 1px 1px #5F5F5F;
+}
+
+.navimg {
+    max-width: 30px;
+}
+
+/* # TEXTS */
+
+h1 {
+    font-style: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+    color: #5F5F5F;
+}
+
+.importanttitle {
+    color: #D2042D;
+}
+
+.importanttext {
+    color: #800020;
+}
+
+/* # IMAGES */
+
+.pfp {
+    max-width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.profiledata {
+    font-size: 16px;
+    color: #5F5F5F;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.profiledata2 {
+    font-size: 16px;
+    color: #5F5F5F;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+/* # SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #260B854D; 
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #260B8566; 
+}
+
+/* # FOOTER */
+
+footer {
+    background-color: rgba(219, 220, 249, .5);
+}
