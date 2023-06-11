@@ -1,19 +1,39 @@
 //# Oldalsáv elrejtése/megjelenítése
-var i = 0;
+var i;
+var sidebar = document.getElementById('sidebar');
+var button = document.getElementById('sideButton');
+var content = document.getElementById('content');
+
+if(localStorage.getItem("sidebar") == null || i == 1 || localStorage.getItem("sidebar") == true) {
+    sidebar.style.width = "300px";
+    content.style.marginLeft = "320px";
+    
+    i = 0;
+} else {
+    sidebar.style.width = "21px";
+    content.style.marginLeft = "41px";
+
+    i = 1;
+
+
+}
+
 var degree = 0;
 function sideHidden() {
-    var sidebar = document.getElementById('sidebar');
-    var button = document.getElementById('sideButton');
-    var content = document.getElementById('content');
+    
 
     if(i == 0) {
         sidebar.style.width = "21px";
         content.style.marginLeft = "41px";
+
         i = 1
+        localStorage.setItem("sidebar", false);
     } else {
         sidebar.style.width = "300px";
         content.style.marginLeft = "320px";
+
         i = 0;
+        localStorage.setItem("sidebar", true);
     }
     degree += 180;
     button.style.transform = `rotate(${degree}deg)`;
