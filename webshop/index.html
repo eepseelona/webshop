@@ -24,9 +24,6 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#"><button class="loginbutton">Bejelentkezés</button></a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link active" href="#"><img class="navimg" src="./img/user.png" alt=""></a>
               </li>
               <li class="nav-item">
@@ -41,7 +38,7 @@
     <div class="container-fluid">
 
         <!--# SIDEBAR -->
-        <div class="sidebar" id="sidebar">
+        <div class="sidebar" id="sidebar" onload="index()">
             <a class="sideButton" id="sideButton" onclick="sideHidden()"><img class="left" src="./img/left.png"></a>
         </div>
 
@@ -49,13 +46,14 @@
         <div class="content" id="content">
 
             <!--# SEARCH -->
-            <div class="search">
-                <img src="./img/search.png" style="width: 30px;" class="search">
+            <div class="searchbar">
                 <img src="./img/filter.png" style="width: 30px;" class="filter">
+                <input type="text" class="searchInput" id="searchInput" placeholder="Search...">
+                <button class="searchButton" type="submit" value=""><img src="./img/search.png" style="width: 30px;" class="search"></button> <!--! elküldeni a kérést, ha rányom erre -->
             </div>
     
             <!--# CARD -->
-            <div class="row">
+            <div class="row justify-content-around">
                 <div class="card" style="width: 18rem;">
         
                     <div class="card-image text-center" style="width: 18rem; height: 16rem;">

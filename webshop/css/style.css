@@ -10,22 +10,15 @@
 /*# NAVBAR */
 .navbar {
     background-color: #DBDCF9;
-    height: 10vh;
-}
+    height: 70px;
+    z-index: 1;
 
-.loginbutton {
-    border-radius: 8px;
-    background-color: #260B854D;
-    align-self: end;
-    box-shadow: 2.5px 5px #00000080;
-}
-.loginbutton:active {
-    transform: translateY(+5px);
-    box-shadow: 1px 1px #5F5F5F;
+    padding: 0 2em;
 }
 
 .navimg {
     max-width: 30px;
+    margin: 0 1em;
 }
 
 /* ----------------------------------------------- */
@@ -41,14 +34,13 @@
         width: 300px;
 
         position: fixed;
-        top: 62px;
+        top: 0;
         left: 0;
         bottom: 0;
 
         background-color: #DBDCF94D;
 
         transition: width .2s ease-in-out;
-        position: absolute;
     }
 
     .sidebar .sideButton {
@@ -60,10 +52,13 @@
         height: 36px;
 
         position: absolute;
-        top: 5px;
+        top: 50vh;
         right: -18px;
 
         transition: transform .2s;
+    }
+    .sidebar .sideButton:hover {
+        cursor: pointer;
     }
 
     .sidebar .sideButton .left {
@@ -79,19 +74,43 @@
 
     /*# CONTENT */
     .content {
-        margin: 20px;
-        margin-left: 320px;
+        margin: 40px;
+        margin-left: 340px;
 
         font-family: Calibre, Helvetica Neue, Segoe UI, Helvetica, Arial, Lucida Grande, sans-serif;
         font-size: 19px;
 
-        flex-grow: 1;
         transition: margin .2s ease-in-out;
     }
 
         /*# SEARCH */
-        .content .search {
-            text-align: right;
+        .content .searchbar {
+            margin: 0 40px;
+            margin-bottom: 20px;
+            display: flex;
+        }
+
+        .content .searchbar .searchInput {
+            width: max-content;
+            flex-grow: 1;
+            margin: 0 5em;
+
+            background-color: #DFE0FF;
+            border-radius: 20px;
+            padding-left: 15px;
+        }
+
+        .content .searchbar .searchButton {
+            background-color: white;
+            outline: none;
+            border: none;
+        }
+
+        .content .searchbar .searchButton .search {
+            float: right;
+        }
+        .content .searchbar .searchButton .search:hover {
+            cursor: pointer;
         }
 
         /*# CARD */
@@ -100,6 +119,7 @@
             
             background-color: #DBDCF94D;
             border-radius: 20px;
+            padding: 0;
 
             margin-top: 25px;
             margin-left: 10px;
