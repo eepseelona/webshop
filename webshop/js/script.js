@@ -3,20 +3,23 @@ var sidebar = document.getElementById('sidebar');
 var button = document.getElementById('sideButton');
 var content = document.getElementById('content');
 var localSidebar = localStorage.getItem('sidebar');
-var degree = 0;
+var degree;
 
 if(!localSidebar || localSidebar == "true") {
     sidebar.style.width = "300px";
     content.style.marginLeft = "340px";
 
+    degree = 0;
     localStorage.setItem("sidebar", "true");
     localSidebar = localStorage.getItem("sidebar");
 } else {
     sidebar.style.width = "21px";
     content.style.marginLeft = "41px";
 
+    degree = 180;
     localSidebar = localStorage.getItem("sidebar");
 }
+button.style.transform = `rotate(${degree}deg)`;
 
 function sideHidden() {
     console.log(localSidebar)
@@ -35,4 +38,11 @@ function sideHidden() {
     }
     degree += 180;
     button.style.transform = `rotate(${degree}deg)`;
+}
+
+
+
+//# Filterek elrejtése/megjelenítése
+function filters() {
+    
 }

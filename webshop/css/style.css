@@ -116,6 +116,20 @@
             cursor: pointer;
         }
 
+        .content .searchbar .filterButton {
+            width: 36px;
+            height: 36px;
+
+            text-align: center;
+
+        }
+        .content .searchbar .filterButton:hover {
+            cursor: pointer;
+
+            background-color: #DFE0FF;
+            border-radius: 10px;
+        }
+
         /*# CARD */
         .content .row .card {
             position: relative;
