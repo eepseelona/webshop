@@ -43,6 +43,15 @@ function sideHidden() {
 
 
 //# Filterek elrejtése/megjelenítése
+var filterContainer = document.getElementById("filterContainer");
+var i = 0;
+
 function filters() {
-    
+    if(i == 0) {
+        // megnyitja a filtereket
+        filterContainer.style.width = "200px";
+        filterContainer.style.height = "max-content";
+    } else {
+        // bezárja a filtereket
+    }
 }
