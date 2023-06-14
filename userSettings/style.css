@@ -54,6 +54,10 @@ p {
     color: #800020;
 }
 
+.settings {
+    cursor: pointer;
+}
+
 /* # IMAGES */
 
 .pfp {

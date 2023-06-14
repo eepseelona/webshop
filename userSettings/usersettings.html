@@ -38,16 +38,16 @@
             <div class="row">
               <div class="col-lg-6">
                 <h1>Adatok módosítása</h1>
-                <h2>Email módosítás</h2>
+                <h2 class="settings" onclick="updateEmail()">Email módosítás</h2>
                 <p>Ebben a menüpontban a bejelentkezési email címedet változtathatod meg.</p>
-                <h2>Felhasználónév módosítása</h2>
+                <h2 class="settings" onclick="updateUsername()">Felhasználónév módosítása</h2>
                 <p>Ennél a beállításnál a felhasználónevedet írhatod át.</p>
-                <h2>Jelszó módosítása</h2>
+                <h2 class="settings" onclick="updatePassword()">Jelszó módosítása</h2>
                 <p>Itt a webshophoz tartozó bejelentkezéshez használt jelszavadat tudod módosítani.</p>
-                <h2>Lakcímek kezelése</h2>
+                <h2 class="settings" onclick="updateAddress()">Lakcímek kezelése</h2>
                 <p>A címre kattintva tekintheted meg a felvett lakcímeidet és módosíthatod őket.</p>
                 <h1 class="importanttitle">Fontos beállítások</h1>
-                <h2 class="importanttitle">Profil törlése</h2>
+                <h2 class="importanttitle settings" onclick="deleteUser()">Profil törlése</h2>
                 <p class="importanttext">Ezzel a gombbal kitörlöd a profilodat. Ez a törlés végleges és nem tudod visszaállítani a profilodat. Sajnos később ugyan ezzel az email címmel nem fogsz tudni újra regisztrálni.</p>
               </div>
               <div class="col-lg-1"></div>
@@ -79,5 +79,9 @@
             </section>
         </footer>
     </div>
+
+    <script type="text/javascript" src="data.json"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
